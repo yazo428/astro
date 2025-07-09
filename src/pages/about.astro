@@ -19,6 +19,7 @@ const fontWeight ="bold"
 const textCase = "uppercase"
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
 ---
 
 <html lang="en">
@@ -71,3 +72,5 @@ import Footer from '../components/Footer.astro';
   </script>
 	</body>
 </html>
+<BaseLayout pageTitle={pageTitle}>
+</BaseLayout>
