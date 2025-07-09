@@ -1,5 +1,9 @@
 ---
+import '../styles/global.css';
+
 const pageTitle ="ホームページ"
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
 ---
 
 <html lang="en">
@@ -11,11 +15,12 @@ const pageTitle ="ホームページ"
 		<title>Astro</title>
 	</head>
 	<body>
-		<a href="/">ホーム</a>
-		<a href="/about/">概要</a>
-        <a href="/blog/">ブログ</a>
+		 <Header />
 		<h1>やゾのAstroサイト</h1>
 		<h2>{pageTitle}</h2>
-		
+		<Footer />
+		   <script>
+       import "../scripts/menu.js";
+  </script>
 	</body>
 </html>
